@@ -1,0 +1,2 @@
+# Heart_Disease_Prediction_using_machine_learning_from_scratch
+implementation of machine learning algorithms for heart disease prediction
