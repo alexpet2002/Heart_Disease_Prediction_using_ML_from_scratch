@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>heart_disease_static</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>heart_disease_static (3)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7876,36 +7876,16 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=aaa6cf25">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=aaa6cf25">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># pip install ucimlrepo</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Requirement already satisfied: ucimlrepo in /usr/local/lib/python3.13/dist-packages (0.0.7)
-Requirement already satisfied: pandas&gt;=1.0.0 in /usr/local/lib/python3.13/dist-packages (from ucimlrepo) (2.2.3)
-Requirement already satisfied: certifi&gt;=2020.12.5 in /usr/local/lib/python3.13/dist-packages (from ucimlrepo) (2026.7.22)
-Requirement already satisfied: numpy&gt;=1.26.0 in /usr/local/lib/python3.13/dist-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.1.3)
-Requirement already satisfied: python-dateutil&gt;=2.8.2 in /usr/local/lib/python3.13/dist-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.9.0.post0)
-Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.13/dist-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2025.2)
-Requirement already satisfied: tzdata&gt;=2022.7 in /usr/local/lib/python3.13/dist-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2026.3)
-Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.13/dist-packages (from python-dateutil&gt;=2.8.2-&gt;pandas&gt;=1.0.0-&gt;ucimlrepo) (1.17.0)
-</pre>
 </div>
 </div>
 </div>
@@ -10271,48 +10251,6 @@ This is how (PCA) works, by rotating the coordinate system so that data is most 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bf5147b6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [93]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># # const5ructing a dataset with z values</span>
-<span class="c1"># pca_columns = [f"PC{i + 1}" for i in range(Z.shape[1])]# number of columns</span>
-
-<span class="c1"># pca_df = pd.DataFrame(Z,columns=pca_columns)</span>
-
-<span class="c1"># pca_df["label"] = getTargets(original_dataset)</span>
-
-<span class="c1"># fig = px.parallel_coordinates(</span>
-<span class="c1">#     pca_df,</span>
-<span class="c1">#     dimensions=["label"] + pca_columns,</span>
-<span class="c1">#     color="label",</span>
-<span class="c1">#     color_continuous_scale=px.colors.sequential.Bluered,</span>
-<span class="c1">#     title="Parallel Coordinates Plot of PCA Components",</span>
-<span class="c1">#     labels={</span>
-<span class="c1">#         "PC1": "PC1",</span>
-<span class="c1">#         "PC2": "PC2",</span>
-<span class="c1">#         "PC3": "PC3",</span>
-<span class="c1">#         "PC4": "PC4",</span>
-<span class="c1">#         "PC5": "PC5",</span>
-<span class="c1">#         "label": "Disease Class"</span>
-<span class="c1">#     }</span>
-<span class="c1"># )</span>
-
-<span class="c1"># # print(type(fig))</span>
-<span class="c1"># # print(pca_df.shape)</span>
-<span class="c1"># # print(pca_df.head())</span>
-<span class="c1"># # import notebook</span>
-<span class="c1"># # print(notebook.__version__)</span>
-<span class="c1"># fig.show()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ZExDxjSpoXw8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -10321,7 +10259,8 @@ This is how (PCA) works, by rotating the coordinate system so that data is most 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/parallel_coordinates.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/parallel_coordinates.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
@@ -10382,36 +10321,6 @@ This is how (PCA) works, by rotating the coordinate system so that data is most 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=29efe2ed-40e7-4bb8-a0cf-65e97f8adcd7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># def style_figure(fig, title, x_title, y_title, height=450):</span>
-<span class="c1">#     fig.update_layout(title={"text": title, "x": 0.5, "xanchor": "center"}, xaxis_title=x_title, yaxis_title=y_title,</span>
-<span class="c1">#                       template="plotly_white", height=height, hovermode="closest",</span>
-<span class="c1">#                       font=dict(family="Arial", size=13, color="#2B2B2B"), legend_title_text="")</span>
-<span class="c1">#     fig.update_xaxes(showgrid=True, gridcolor="#E5E7EB")</span>
-<span class="c1">#     fig.update_yaxes(showgrid=True, gridcolor="#E5E7EB")</span>
-<span class="c1">#     return fig</span>
-
-<span class="c1"># df_tmp = pd.DataFrame({"Feature 1": np.concatenate([np.atleast_1d(heart_disease_array[ind, 0]), np.atleast_1d(X_rec[ind, 0])]),</span>
-<span class="c1">#                        "Feature 2": np.concatenate([np.atleast_1d(heart_disease_array[ind, 1]), np.atleast_1d(X_rec[ind, 1])]),</span>
-<span class="c1"># "Dataset": ["Original Data"] * len(np.atleast_1d(heart_disease_array[ind, 0])) + ["Reconstructed Data"] * len(np.atleast_1d(X_rec[ind, 0]))})</span>
-
-<span class="c1"># fig = px.scatter(df_tmp, x="Feature 1", y="Feature 2", color="Dataset", symbol="Dataset",</span>
-<span class="c1">#                  color_discrete_map={"Original Data": "#2563EB", "Reconstructed Data": "#F97316"}, opacity=0.7)</span>
-<span class="c1"># fig.update_traces(marker=dict(size=8))</span>
-<span class="c1"># style_figure(fig, "Original vs Reconstructed Features Using PCA", "Feature 1", "Feature 2")</span>
-<span class="c1"># fig.show()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=UJzNw8y6n9Gx">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -10420,7 +10329,8 @@ This is how (PCA) works, by rotating the coordinate system so that data is most 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span>
 
 <span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/reconstructed_pca.png"</span><span class="p">)</span>
@@ -11293,29 +11203,6 @@ Test Accuracy of LR: 85.00 %
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e0e35466-7841-479d-8fb0-ccef6869361c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [99]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># import plotly.graph_objects as go</span>
-<span class="c1"># def plot_learning_curve(losses, title="Training Learning Curve"):</span>
-<span class="c1">#     epochs = np.arange(1, len(losses) + 1)</span>
-<span class="c1">#     fig = go.Figure()</span>
-<span class="c1">#     fig.add_trace(go.Scatter(x=epochs, y=losses, mode="lines", name="Training loss", line=dict(color="#2563EB", width=3),</span>
-<span class="c1">#                              hovertemplate="Epoch: %{x}&lt;br&gt;Loss: %{y:.4f}&lt;extra&gt;&lt;/extra&gt;"))</span>
-<span class="c1">#     style_figure(fig, title, "Epoch", "Cross-Entropy Loss")</span>
-<span class="c1">#     fig.show()</span>
-
-<span class="c1"># plot_learning_curve(losses)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=R8ECI_JHo0kP">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -11324,7 +11211,8 @@ Test Accuracy of LR: 85.00 %
 <div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/learning_curve1.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/learning_curve1.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
@@ -11551,35 +11439,6 @@ Test Accuracy of LR: 85.00 %
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=56340dc0-b8a1-4a86-b0bc-00e549465f88">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># validation_errors = np.asarray(val, dtype=float)</span>
-<span class="c1"># k_values = np.arange(1, 10 + 1)</span>
-<span class="c1"># best_index = np.argmin(validation_errors)</span>
-<span class="c1"># kbest = int(k_values[best_index])</span>
-<span class="c1"># best_error = validation_errors[best_index]</span>
-<span class="c1"># fig = go.Figure()</span>
-<span class="c1"># fig.add_trace(go.Scatter(x=k_values, y=validation_errors * 100, mode="lines+markers", name="Validation error",</span>
-<span class="c1">#                          line=dict(color="#2563EB", width=3), marker=dict(size=7),</span>
-<span class="c1">#                          hovertemplate="K: %{x}&lt;br&gt;Validation error: %{y:.2f}%&lt;extra&gt;&lt;/extra&gt;"))</span>
-<span class="c1"># fig.add_trace(go.Scatter(x=[kbest], y=[best_error * 100], mode="markers", name="Best K",</span>
-<span class="c1">#                          marker=dict(color="#EF4444", size=13, symbol="star"),</span>
-<span class="c1">#                          hovertemplate="Best K: %{x}&lt;br&gt;Validation error: %{y:.2f}%&lt;extra&gt;&lt;/extra&gt;"))</span>
-<span class="c1"># style_figure(fig, "KNN Validation Error by Number of Neighbors", "Number of Neighbors (K)", "Average Validation Error (%)")</span>
-<span class="c1"># fig.update_xaxes(dtick=1)</span>
-<span class="c1"># fig.show()</span>
-<span class="c1"># print(f"Best K is {kbest} with average validation error {best_error * 100:.2f}%")</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=YKtC0zV9o90e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -11588,7 +11447,8 @@ Test Accuracy of LR: 85.00 %
 <div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/knn_error.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/knn_error.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
@@ -11654,47 +11514,6 @@ Test Accuracy of LR: 85.00 %
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=66c3c475-6014-4e7e-80e6-4e6259175927">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># def plot_confusion_matrix_plotly(y_true, y_pred, labels, title, normalize=False):</span>
-<span class="c1">#     cm = confusion_matrix(y_true, y_pred, labels=labels)</span>
-<span class="c1">#     row_totals = cm.sum(axis=1, keepdims=True)</span>
-<span class="c1">#     cm_display = np.divide(cm, row_totals, out=np.zeros_like(cm, dtype=float), where=row_totals != 0) if normalize else cm</span>
-<span class="c1">#     text = np.vectorize(lambda x: f"{x:.1%}")(cm_display) if normalize else cm.astype(str)</span>
-<span class="c1">#     colorbar_title = "Proportion" if normalize else "Count"</span>
-<span class="c1">#     label_names = [str(label) for label in labels]</span>
-<span class="c1">#     fig = go.Figure(data=go.Heatmap(z=cm_display, x=label_names, y=label_names,</span>
-<span class="c1">#                                     colorscale="Blues", text=text, texttemplate="%{text}",</span>
-<span class="c1">#                                     hovertemplate="Actual: %{y}&lt;br&gt;Predicted: %{x}&lt;br&gt;Value: %{text}&lt;extra&gt;&lt;/extra&gt;",</span>
-<span class="c1">#                                     colorbar=dict(title=colorbar_title)))</span>
-<span class="c1">#     style_figure(fig, title, "Predicted Class", "Actual Class", height=500)</span>
-<span class="c1">#     fig.update_yaxes(autorange="reversed")</span>
-<span class="c1">#     fig.show()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fc1170d8-2bb1-447a-a37c-b72dc4dfa96a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># plot_confusion_matrix_plotly(y_test, y_pred_knn, [0, 1], "KNN Confusion Matrix")</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=r6cr-_VNpHnq">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -11703,7 +11522,8 @@ Test Accuracy of LR: 85.00 %
 <div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/cm_knn.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/cm_knn.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
@@ -12386,20 +12206,6 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6aa4950b-29c0-4aa2-9e8f-3b938463fe40">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># plot_confusion_matrix_plotly(y_test, y_pred, classes, "Hybrid Naive Bayes Confusion Matrix")</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=hA7TRlPipVj6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -12408,7 +12214,8 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <div class="jp-InputPrompt jp-InputArea-prompt">In [107]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/cm_bayes.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/cm_bayes.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
@@ -12724,20 +12531,6 @@ Total accuracy of Train set: 1.0
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7c938fb1-72d3-4a32-9481-3392a8b8edd9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># plot_learning_curve(mlp_losses)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=su83NHQgpsjb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -12746,7 +12539,8 @@ Total accuracy of Train set: 1.0
 <div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/learning_curve2.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/learning_curve2.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
@@ -13139,30 +12933,6 @@ K-medoids converged after 11 iterations
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2279007a-e947-4a5e-a61e-682ba6160f95">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># k_values = np.arange(2, 20)</span>
-<span class="c1"># fig = go.Figure()</span>
-<span class="c1"># fig.add_trace(go.Scatter(x=k_values, y=macro_scores, mode="lines+markers",</span>
-<span class="c1">#                          name="Macro score", line=dict(color="#2563EB", width=3), marker=dict(size=7),</span>
-<span class="c1">#                          hovertemplate="Clusters: %{x}&lt;br&gt;Macro score: %{y:.4f}&lt;extra&gt;&lt;/extra&gt;"))</span>
-<span class="c1"># fig.add_trace(go.Scatter(x=k_values, y=micro_scores, mode="lines+markers",</span>
-<span class="c1">#                          name="Micro score", line=dict(color="#F97316", width=3),</span>
-<span class="c1">#                          marker=dict(size=7), hovertemplate="Clusters: %{x}&lt;br&gt;Micro score: %{y:.4f}&lt;extra&gt;&lt;/extra&gt;"))</span>
-<span class="c1"># style_figure(fig, "Silhouette Scores by Number of Clusters", "Number of Clusters (K)", "Silhouette Score")</span>
-<span class="c1"># fig.update_xaxes(dtick=1)</span>
-<span class="c1"># fig.show()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=AMaemOdSqEPx">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -13171,7 +12941,8 @@ K-medoids converged after 11 iterations
 <div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/silhouette.png"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># @title Default title text</span>
+<span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"/content/silhouette.png"</span><span class="p">)</span>
 
 <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">image_path</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="s2">"png"</span><span class="p">))</span>
 </pre></div>
