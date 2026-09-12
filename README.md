@@ -1,7 +1,8 @@
 ## Heart Disease Prediction — Machine Learning From Scratch
 
 **[View rendered Notebook Here](https://alexpet2002.github.io/Heart_Disease_Prediction_using_machine_learning_from_scratch/)**
-This project includes core machine learning algorithms implemented from scratch in Python and applies them to a common domain: identifying the presence or absence of heart disease from patient characteristics.
+
+<br>This project includes core machine learning algorithms implemented from scratch in Python and applies them to a common domain: identifying the presence or absence of heart disease from patient characteristics.</br>
 
 The aim is to explore both the mathematical foundations of machine learning and their practical application to real-world data.
 
