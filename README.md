@@ -1,4 +1,4 @@
-## Heart Disease Prediction — Machine Learning From Scratch
+## Heart Disease Prediction - Machine Learning From Scratch
 
 **[View rendered Notebook Here](https://alexpet2002.github.io/Heart_Disease_Prediction_using_machine_learning_from_scratch/)**
 
@@ -31,4 +31,6 @@ The project includes:
 | Hybrid Naive Bayes | 63.64 % | 
 | K-Nearest Neighbors (KNN) | 84.44 % |
 | Multilayer Perceptron (MLP) |  0.96% | 
+
+> **Note:** This project uses interractive plotly plots that are not fully rendered in GitHub's static notebook preview. To view and interact with all visualizations, run the notebook locally.
 
